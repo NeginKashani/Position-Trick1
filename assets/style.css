@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-color: rgb(2, 2, 2);
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+    align-items: center;
+
+
+}
+
+.box>span {
+    height: 130px;
+    width: 100%;
+    display: block;
+    position: relative;
+    opacity: 1;
+    margin: 100px auto;
+
+}
+
+.box>span::before {
+    content: '';
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    padding: 15px;
+    background-color: #0afc3edc;
+    position: absolute;
+    border-radius: 50%;
+    transform: scale(0.5);
+    box-shadow: 0 0 10px #00f7ffe0,
+        0 0 20px #c54b7a,
+        0 0 20px #3c4e38,
+        0 0 20px #98b2ec,
+        0 0 50px #e20f3d;
+    transition: all 3s;
+    cursor: pointer;
+
+}
+
+span:hover::before {
+    cursor: pointer;
+    transform: scale(2);
+    transition: 0.5s;
+    z-index: 1;
+
+
+
+
+}
